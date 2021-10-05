@@ -1,0 +1,321 @@
+{
+  "groups": [
+    {
+      "name": "projections.datasource.hikari",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.icap.config.ProjectionsJpaConfig",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "projections.datasource.hikari",
+      "type": "com.zaxxer.hikari.HikariConfig",
+      "sourceType": "com.icap.config.ProjectionsJpaConfig",
+      "sourceMethod": "hikariConfig()"
+    },
+    {
+      "name": "projections.jpa",
+      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
+      "sourceType": "com.icap.config.ProjectionsJpaConfig",
+      "sourceMethod": "jpaProperties()"
+    },
+    {
+      "name": "projections.liquibase",
+      "type": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties",
+      "sourceType": "com.icap.config.ProjectionsJpaConfig",
+      "sourceMethod": "primaryMappingsLiquibaseProperties()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "projections.datasource.hikari.allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.connection-test-query",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.data-source-j-n-d-i",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.exception-override-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.health-check-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.health-check-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.idle-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.initialization-fail-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.jdbc-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.max-lifetime",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.metric-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.metrics-tracker-factory",
+      "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.pool-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.scheduled-executor",
+      "type": "java.util.concurrent.ScheduledExecutorService",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.transaction-isolation",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.username",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.datasource.hikari.validation-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "projections.jpa.database",
+      "type": "org.springframework.orm.jpa.vendor.Database",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.jpa.database-platform",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.jpa.generate-ddl",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.jpa.mapping-resources",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.jpa.open-in-view",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.jpa.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.jpa.show-sql",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "projections.liquibase.change-log",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.clear-checksums",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.contexts",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.database-change-log-lock-table",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.database-change-log-table",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.default-schema",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.drop-first",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.labels",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.liquibase-schema",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.liquibase-tablespace",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.parameters",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.rollback-file",
+      "type": "java.io.File",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.tag",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.test-rollback-on-update",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.url",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "projections.liquibase.user",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,18 @@
+apply plugin: 'jacoco'
+
+dependencies {
+    api project(':command-validation-api')
+    api project(':users-api')
+
+    implementation project(':common')
+    implementation project(':i18n-support')
+    implementation project(':organizations-api')
+
+    implementation 'org.springframework:spring-context'
+    implementation "org.apache.commons:commons-lang3:${commonsLangVersion}"
+    implementation "commons-validator:commons-validator:${commonsValidatorVersion}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitVersion}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
+    testImplementation "org.hamcrest:hamcrest-library:${hamcrestVersion}"
+}

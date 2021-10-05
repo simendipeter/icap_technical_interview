@@ -1,0 +1,4 @@
+file("src").eachDir { p ->
+    include p.name
+    project(":${p.name}").projectDir = p
+}

@@ -1,0 +1,12 @@
+dependencies {
+    api project(':common')
+    api project(':command-validation-api')
+
+    api 'javax.validation:validation-api'
+
+    implementation "engineering.everest.axon:crypto-shredding-extension:${axonCryptoShreddingVersion}"
+    implementation "org.axonframework:axon-modelling:${axonVersion}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitVersion}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
+}

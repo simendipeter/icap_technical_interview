@@ -1,0 +1,23 @@
+apply plugin: 'jacoco'
+
+dependencies {
+    implementation project(':common')
+    implementation project(':i18n-support')
+    implementation project(':organizations-api')
+    implementation project(':users-api')
+    implementation project(':security-support')
+
+    implementation "engineering.everest.axon:command-distribution-extension:${axonHazelcastCommandDistributionVersion}"
+    implementation "engineering.everest.starterkit:security:${securityVersion}"
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation "io.springfox:springfox-boot-starter:${swaggerVersion}"
+    implementation "org.axonframework:axon-modelling:${axonVersion}"
+
+    testImplementation project(':users-api').sourceSets.test.output
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitVersion}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.springframework.security:spring-security-test"
+    testImplementation "org.apache.commons:commons-lang3:${commonsLangVersion}"
+}

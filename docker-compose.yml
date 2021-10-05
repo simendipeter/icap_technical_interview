@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres-db:
+    image: postgres:12-alpine
+    container_name: postgres-db
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./src/launcher/db-scripts:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: default
+      POSTGRES_PASSWORD: postgres
